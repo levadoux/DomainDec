@@ -10,7 +10,7 @@ int main(){
   CooMatrix<double> Q = partition4.second;
   Plot(Sigma,"partition/partition4.mesh");
   
-  auto partition4r = Partition4(Omega,1); 
+  auto partition4r = Partition4(Omega,2); 
   std::vector<Mesh2D> Gamma4 = partition4r.first; 
   CooMatrix<double> R4 = partition4r.second;
   Write(Gamma4[0],"partition/part4_q0");
@@ -18,15 +18,15 @@ int main(){
   // Write(Gamma4[2],"partition/part4_q2");
   // Write(Gamma4[3],"partition/part4_q3");
 
-  auto partition16 = Partition16(Omega); 
-  std::vector<Mesh2D> Sigma16 = partition16.first; 
-  CooMatrix<double> Q16 = partition16.second;
-  Plot(Sigma16,"partition/partition16.mesh");
+  // auto partition16 = Partition16(Omega); 
+  // std::vector<Mesh2D> Sigma16 = partition16.first; 
+  // CooMatrix<double> Q16 = partition16.second;
+  // Plot(Sigma16,"partition/partition16.mesh");
   
-  auto partition16r = Partition16(Omega,1); 
-  std::vector<Mesh2D> Gamma16 = partition16r.first; 
-  CooMatrix<double> R16 = partition16r.second;
-  Write(Gamma16[0],"partition/part16_q0");
+  auto partition16r = Partition16(Omega,2); 
+  // std::vector<Mesh2D> Gamma16 = partition16r.first; 
+  // CooMatrix<double> R16 = partition16r.second;
+  // Write(Gamma16[0],"partition/part16_q0");
   // Write(Gamma16[1],"partition/part16_q1");
   // Write(Gamma16[2],"partition/part16_q2");
   // Write(Gamma16[3],"partition/part16_q3");

@@ -85,6 +85,9 @@ plot_conv:
 plot_conv_precond:
 	python3 plot_conv_precond.py
 
+plot_conv_precond_schwarz:
+	python3 plot_conv_precond_schwarz.py
+
 plot_iter:
 	python3 plot_iter.py
 

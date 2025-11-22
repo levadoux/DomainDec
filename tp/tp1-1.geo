@@ -1,7 +1,7 @@
 //+ Utilisation du kernel OpenCASCADE
 SetFactory("OpenCASCADE");
 
-h = 0.0025;
+h = 0.002;
 //+ Définition des points (coins du carré)
 Point(1) = {0, 0, 0, h};
 Point(2) = {1, 0, 0, h};

@@ -2,7 +2,7 @@
 SetFactory("OpenCASCADE");
 
 //+ Taille caractéristique de la maille
-lc = 0.02;
+lc = 0.002;
 
 //+ Définition du cube : x0,y0,z0, dx,dy,dz
 Box(1) = {0, 0, 0, 1, 1, 1};
