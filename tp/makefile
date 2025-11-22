@@ -53,7 +53,7 @@ tp3-exo3.o: tp3-exo3.cpp
 H_LIST = 0.025 0.01 0.005 0.0025
 
 iter:
-	rm dat/iter.dat
+	
 	@for h in $(H_LIST); do \
 		echo "Lancement avec h = $$h"; \
 		nb_it=$$(./tp1-exo3.exe $$h | tail -n 1); \
@@ -61,15 +61,23 @@ iter:
 	done
 
 iter_precond:
-	rm dat/iter_precond.dat
+	
 	@for h in $(H_LIST); do \
 		echo "Lancement avec h = $$h"; \
 		nb_it=$$(./tp2-exo1.exe $$h | tail -n 1); \
 		echo "$$h ; $$nb_it" >> dat/iter_precond.dat; \
 	done
 
+iter_precond_Schwarz_add:
+	
+	@for h in $(H_LIST); do \
+		echo "Lancement avec h = $$h"; \
+		nb_it=$$(./tp3-exo3.exe $$h | tail -n 1); \
+		echo "$$h ; $$nb_it" >> dat/iter_precond_Schwarz_add.dat; \
+	done
+
 vizirhere:
-	../../vizir4.2025.01.22.windows/vizir4.exe 
+	../../vizir4.2025.01.22.windows/vizir4.exe &
 
 plot_conv:
 	python3 plot_conv.py

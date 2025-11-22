@@ -6,7 +6,7 @@ h_values = [0.025, 0.01, 0.005, 0.0025]
 
 plt.figure(figsize=(7,5))
 
-filename = "iter_precond.dat"
+filename = "dat/iter_precond.dat"
 data = np.loadtxt(filename, delimiter=';')
 h = data[:, 0]
 niter = data[:, 1]

@@ -10,4 +10,6 @@ int main(){
   auto F    = [&k](const R3& x){return std::cos(k*(x[0]+x[1]+x[2]));}; 
   auto u    = VhB(F); 
   Plot(VhB,u,"output/output_tp1_exo2"); 
+
+  return 0;
 }
